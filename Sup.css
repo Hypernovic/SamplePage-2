@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+   
+body {
+    font-family: 'Manrope';
+    background-color: red;
+    overflow: hidden;
+  }
+
+/* width */
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    transition: all .25s;
+  }
+
+  .main-secondary ::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    transition: all .25s;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    margin: 0 25vw 0 25vw;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #777;
+  }
+
+
+.flex-body{
+    display:flex;
+    background-image: url("Neymar.svg");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center;
+    width: 100vw;
+    height:100vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.flex-body section{
+    flex: none;
+    display: flex;
+    width: 100vw;
+    height:100vh;
+    scroll-snap-align: start;
+    align-items: center;
+}
+
+.heading h1{
+    font-family: "Oooh Baby";
+    font-size: xx-large;
+}
+
+.heading p{
+    font-weight: bold;
+}
+
+.heading-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 400px;
+    min-width: 200px;
+    margin-left: 25vh ;
+    color: beige;
+}
+
+.btn-wrapper{
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-self: center;
+    zoom: 1.5;
+}
+
+.btn-outline-dark{
+    color:beige;
+    border: 1px solid beige;
+    border-radius: 40%;
+    padding: 10%;
+    margin: 0 10% 0 10%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.connect-image{
+    /* top:0; */
+    height:100vh;
+}
+
+
+.secondary{
+    display: flex;
+    flex-direction: row;
+}
+
+.secondary .space{
+    width: 100%;
+}
+
+.main-secondary{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 10px;
+    min-height: fit-content;
+    max-height: 90vh;
+    margin: 2vw;
+    padding: 1vw;
+    color: beige;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.main-secondary .cards{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-secondary .card-header{
+    font-family: "Oooh Baby";
+    padding: 0.5rem 0 0 .2rem;
+}
+
+.card-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-slider{
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width: 80%;
+}
+
+.slider-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 0.5rem;
+    padding: 0.5rem;
+    height: fit-content;
+    width: fit-content;
+}
+
+
+.fader-slider::before {
+    content: "";
+    position: relative;
+    width: 10%;
+    right: -9%;
+    z-index: 1;
+    background: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 5%,
+    rgb(255, 255, 255,0) 80%
+    
+    );
+}
+.fader-slider::after {
+    content: "";
+    position: relative;
+    width: 10%;
+    left: -9%;
+    z-index: 1;
+    background: linear-gradient(
+    to left,
+    rgb(0, 0, 0) 5%,
+    rgb(255, 255, 255,0) 80%
+    
+    );
+}
+
+.slider-item img{
+    background-color: black;
+    height: 100px;
+}
+
+.slider-item-footer{
+    font-family: "Oooh Baby";
+    font-size:1.3rem;
+    margin-top: 0.5rem;
+}
+
+/* @media screen and (max-width:1000px) and (orientation:landscape){
+    body{
+        background-color: aqua;
+    }
+    .flex-body{
+        background-size: 100vw ;
+        background-position: left bottom;
+    }
+
+    .heading-flex{
+        align-self: flex-start;
+        color:black;
+        margin-left:5vh;
+        margin-top:5vh;
+        color: beige;
+    }
+
+    .secondary .space{
+        display: none;
+    }
+
+    .main-secondary{
+        display: flex !important;
+    }
+} */
+
+@media screen and (max-width:984px) and (orientation:portrait) {
+    .flex-body{
+        background-size: 100vw ;
+        background-position: left bottom;
+    }
+    
+    .btn-wrapper{
+        margin: 3vh;
+    }
+    .heading-flex{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        color:black;
+        margin:5vh;
+        color: beige;
+    }   
+    .secondary .space{
+        display: none;
+    }
+
+    .main-secondary{
+        display: flex !important;
+        min-width: none !important;
+    }
+
+}
+
+
