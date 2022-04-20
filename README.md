@@ -1,5 +1,7 @@
 # SamplePage-2
  Responsice Design Samples for Freelancing
+ ![RedSite](https://user-images.githubusercontent.com/73527944/164274765-90ba8be4-558c-46d8-8f68-2f85549b7aad.png)
+
 
 ### Type-1
 ![image](https://user-images.githubusercontent.com/73527944/163999173-acceef5e-4869-4f73-afe7-68d6fc3871dd.png)
